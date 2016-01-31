@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>用 jQuery 控制網頁捲軸移動(動畫式)</title>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--<script src="js/jquery.min.js"></script>-->
+<script src="js/demo.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(function(){
+//	 預設的透明度值
+	var _opacity = 0.3;
+ 
+//	 讓 .black-div img 的透明度為預設的透明度值
+	$('.black-div').css('opacity', _opacity);
+});
+
+
+</script>
+</head>
+
+<body>
+	<div class="box">主視覺理念</div>
+	<div class="mask-div">
+		<img src="img/1.jpg" />
+		<img src="img/2.jpg" alt="">
+	</div>
+	
+</body>
+
+</html>

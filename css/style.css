@@ -1,0 +1,56 @@
+body {
+    color: #383838;
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+/*    background: #383838;*/
+}
+.box {
+    border: thick solid #383838;
+    opacity: 0.5;
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition-property: border-color;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+
+}
+.box:hover {
+/*    background: #ffffff;*/
+    color: #2c82ff;
+    border: thick solid #2c82ff;
+}
+
+.mask-div img {
+    opacity: 0.6;
+/*	background: black;*/
+	width: 300px;
+	height: 300px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+
+.mask-div img:hover {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+}
+/*
+.mask-div {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+ 
+.mask-div img {
+	position: absolute;
+}
+ 
+.mask-div .cover-mask {
+	position: absolute;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}*/

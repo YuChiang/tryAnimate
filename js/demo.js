@@ -1,10 +1,17 @@
-//$(function(){
-//	// 預設的透明度值
-//	var _opacity = 0.7;
-// 
-//	// 在 .mask-div 中加入一個遮罩用的 .cover-mask, 並設定其透明度為預設的透明度值
-//	// 接著加入 .hover() 事件
-//	$('.mask-div').append('<div class="cover-mask"></div>').find('.cover-mask').css({
-//		opacity: _opacity
-//	});
-//});
+$(function(){
+//	 預設的透明度值
+	var _opacity = 0.3;
+ 
+//	 讓 .black-div img 的透明度為預設的透明度值
+	$('.black-div').css('opacity', _opacity);
+});
+
+
+$(document).ready(function(){
+    $('.project').on('mouseenter', 'img', function(){
+         $(this).closest('.project').find('a').slideToggle();
+    });
+    $('.project').on('mouseleave', 'img', function(){
+         $(this).closest('.project').find('a').slideToggle();
+    });
+});

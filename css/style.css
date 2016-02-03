@@ -1,6 +1,6 @@
 body {
     color: #383838;
-    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    font: 600 14px/24px "Montserrat", "Lato", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 /*    background: #383838;*/
 }
 .box {
@@ -14,43 +14,77 @@ body {
     transition-property: border-color;
     transition-duration: 0.1s;
     transition-timing-function: cubic-bezier(.42, 0, .58, 1);
-
+    z-index: 1;
 }
 .box:hover {
 /*    background: #ffffff;*/
     color: #2c82ff;
     border: thick solid #2c82ff;
 }
-
-.mask-div img {
+ul {
+    list-style:none;
+    padding-left:0;
+}
+img {
     opacity: 0.6;
 /*	background: black;*/
 	width: 300px;
 	height: 300px;
     transition-property: all;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+    z-index: 20;
 }
 
-.mask-div img:hover {
+img:hover {
     opacity: 1;
     width: 300px;
     height: 300px;
 }
-/*
-.mask-div {
-	position: relative;
-	width: 300px;
-	height: 300px;
+
+
+
+#allProjects{
+    background-repeat: repeat-x;    
+    height:121px;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 13px;
 }
- 
-.mask-div img {
-	position: absolute;
+
+#allProjects .project{    
+    width: 300px; 
+    height: 300px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right:0px;
+    display:inline-block;
+    position:relative;
 }
- 
-.mask-div .cover-mask {
-	position: absolute;
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-}*/
+
+#allProjects .light a {
+    position:absolute;
+    bottom: 0px;
+    display: none;
+/*    left: 10px;*/
+    width: 300px;
+    height: 20%;
+    background-color: rgba(25, 29, 32, 0.5);
+    color:#fff;
+    
+}
+#allProjects .dark a {
+    position:absolute;
+    bottom: 0px;
+    display: none;
+/*    left: 10px;*/
+    width: 300px;
+    height: 20%;
+    background-color: rgba(248, 248, 248, 0.5);
+    color:#000;
+    
+}
+#allProjects .project a:hover{
+    text-decoration: none;
+}

@@ -8,10 +8,10 @@ $(function(){
 
 
 $(document).ready(function(){
-    $('.project').on('mouseenter', 'img', function(){
+    $('ul').on('mouseenter', 'li', function(){
          $(this).closest('.project').find('a').slideToggle();
     });
-    $('.project').on('mouseleave', 'img', function(){
+    $('ul').on('mouseleave', 'li', function(){
          $(this).closest('.project').find('a').slideToggle();
     });
 });

@@ -25,7 +25,13 @@ ul {
     list-style:none;
     padding-left:0;
 }
-img {
+
+img{
+    width: 300px;
+	height: 300px;
+
+}
+li {
     opacity: 0.6;
 /*	background: black;*/
 	width: 300px;
@@ -36,7 +42,7 @@ img {
     z-index: 20;
 }
 
-img:hover {
+li:hover {
     opacity: 1;
     width: 300px;
     height: 300px;
@@ -68,6 +74,8 @@ img:hover {
     bottom: 0px;
     display: none;
 /*    left: 10px;*/
+    padding-left: 15px;   
+    padding-top: 15px;
     width: 300px;
     height: 20%;
     background-color: rgba(25, 29, 32, 0.5);
@@ -79,6 +87,9 @@ img:hover {
     bottom: 0px;
     display: none;
 /*    left: 10px;*/
+    padding-left: 15px;   
+    padding-top: 15px;
+    
     width: 300px;
     height: 20%;
     background-color: rgba(248, 248, 248, 0.5);

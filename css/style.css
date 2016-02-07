@@ -21,16 +21,31 @@ body {
     color: #2c82ff;
     border: thick solid #2c82ff;
 }
+
+
 ul {
     list-style:none;
     padding-left:0;
 }
 
-img{
-    width: 300px;
-	height: 300px;
+ul {
+/*allProjects: 80% center*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li img{
+/*    width: 300px;*/
+/*	height: 300px;*/
+    width: 100%;
 
 }
+/*
+img{
+    
+}
+*/
 li {
     opacity: 0.6;
 /*	background: black;*/
@@ -52,50 +67,55 @@ li:hover {
 
 #allProjects{
     background-repeat: repeat-x;    
-    height:121px;
+/*    height:121px;*/
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+/*
     margin-left: 20px;
-    margin-top: 13px;
+    margin-top: 20px;
+*/
 }
 
 #allProjects .project{    
     width: 300px; 
     height: 300px;
-    line-height: 20px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right:0px;
+/*    line-height: 20px;*/
+/*    margin-top: 0px;*/
+/*    margin-left: 0px;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
     display:inline-block;
     position:relative;
 }
-
+img{
+    width: 300px;
+    height: 300px;
+}
 #allProjects .light a {
     position:absolute;
     bottom: 0px;
     display: none;
-/*    left: 10px;*/
     padding-left: 15px;   
     padding-top: 15px;
-    width: 300px;
-    height: 20%;
+    width: 285px;
+    height: 15%;
     background-color: rgba(25, 29, 32, 0.5);
     color:#fff;
-    
 }
 #allProjects .dark a {
     position:absolute;
     bottom: 0px;
     display: none;
-/*    left: 10px;*/
     padding-left: 15px;   
     padding-top: 15px;
-    
-    width: 300px;
-    height: 20%;
-    background-color: rgba(248, 248, 248, 0.5);
+    width: 285px;
+
+    height: 15%;
+    background-color: rgba(28, 248, 248, 0.5);
     color:#000;
-    
 }
+
 #allProjects .project a:hover{
     text-decoration: none;
 }

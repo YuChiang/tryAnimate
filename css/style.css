@@ -22,6 +22,30 @@ body {
     border: thick solid #2c82ff;
 }
 
+.projectSection{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.sortButton{
+    display: block;
+    
+}
+.sortTags {
+    height: 200px;
+/*    width: 60%;*/
+    background-color: #F1B2DC;
+    
+
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+
 
 ul {
     list-style:none;
@@ -33,10 +57,14 @@ ul {
 
 #allProjects{
     background-repeat: repeat-x;    
-    width: 80%;
+/*    width: 60%;*/
+    background-color: azure;
+    padding-top: 20px;
+    padding-left: 2%;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 #allProjects .project{  
@@ -84,4 +112,13 @@ img{
 }
 .chooseButton {
     display: block;
+}
+
+.selected {
+    background-color: red;
+    color: #345345;
+}
+
+.sortTags button:hover{
+    background-color: #FEDD00;
 }

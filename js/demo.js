@@ -14,4 +14,36 @@ $(document).ready(function(){
     $('ul').on('mouseleave', 'li', function(){
          $(this).closest('.project').find('a').slideToggle();
     });
+
+    //sort section
+    
+    
+    // $( ".sortTags button" ).toggle(function() {
+    //     // alert( "First handler for .toggle() called." );
+    //     $(this).css({
+    //         'background-color': ''
+    //     });
+    // }, 
+    // // function() {
+    // //     $(this).css({
+    // //         'background-color': '#434343'
+    // //     });
+    // });
+
+    // $( ".sortTags button" ).toggle(
+    //     function() {
+    //         $( this ).addClass( "selected" );
+    //     }, function() {
+    //         $( this ).removeClass( "selected" );
+    //     }
+    // );
+    $('.sortTags').on('click', 'button', function(){
+        console.log($(this));
+        console.log('hi');
+        $(this).css({
+            'background-color' : '#74D1EA',
+            'color' : 'white',
+        });
+    });
+    
 });
